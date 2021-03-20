@@ -1,0 +1,80 @@
+@import "colores";
+@import "fuentes";
+$tamañotitulo:50px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body {
+	background-color: $colorfondo;
+}
+
+p {
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	   li {
+	       padding: 15px;
+	       display: inline-block;
+	         a {
+	             text-decoration: none;
+	                 font-size: 16px;
+	             color: #444;
+	         }
+	   }
+}
+
+h1 {
+	color: $colornegro;
+	font-size: $tamañotitulo;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+.Diseños__subtitulo {
+ 	text-align: center;
+ 	color: $colornaranja;
+ 	padding-top: 100px;
+ 	font-size: 40px; 
+ 	/* transformacion para acercarlo al titulo */
+ 	transform: translate(0px, -70px); 
+
+	animation-duration: 2s;
+	animation-name: aparecer;
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+ }
+
+
+/* filas columnas grid */
+.grid {
+  display: grid;
+  display: flex;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px 200px;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.carousel {
+	padding: 15,15,15,15;
+}
+
+.calendario {
+display: flex;
+    aling-items: center;
+	justify-content:center;
+}
